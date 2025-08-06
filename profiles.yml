@@ -1,0 +1,11 @@
+dbt_snowflake_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: 'ACCOUNTADMIN'
+      warehouse: 'COMPUTE_WH'
+      database: 'DEMO_DB'
+      schema: 'DEMO_SCHEMA'
+      account: 'FL09246'
+      user: 'kirtisharma'
