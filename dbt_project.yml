@@ -1,0 +1,11 @@
+name: 'dbt_snowflake_poc'
+version: '1.0'
+config-version: 2
+
+profile: 'dbt_snowflake_profile'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
